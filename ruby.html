@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size:16px;}
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+    .container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: top 100px;   
+   }
+   .card{
+   
+    overflow: hidden; 
+     margin: 20px;
+   }
+   /*FOOTER*/
+
+footer {
+  background-color: #1a1919;
+  color: white;
+
+  margin-top:100px;
+ 
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.8s;
+}
+
+footer a:hover {
+  color: #f70e0e;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+    </style>
+    </head>
+    <body>
+    
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+      <div class="w3-container">
+        <h3 class="w3-padding-64"><img src="https://www.freepnglogos.com/uploads/diamond-png/diamond-gemstone-black-icon-transparent-png-svg-vector-37.png"height="100px"width="100px" alt=""><b>Crystal<br>Products</b></h3>
+      </div>
+      <div class="w3-bar-block">
+        <a href="" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+        <a href="" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Products</a> 
+        <a href="" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Special offers</a> 
+        <a href="" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">New Arrivals</a> 
+        <a href="" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a> 
+        <a href="" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
+        <a href="" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Compare</a>  </div>
+        </nav>
+    
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-dark-red w3-xlarge w3-padding">
+      <a href="javascript:void(0)" class="w3-button w3-hover-pink w3-margin-right" onclick="w3_open()">☰</a>
+      <span>Company Name</span>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+    
+      <!-- Header -->
+      <div class="w3-container" style="margin-top:80px" id="showcase">
+        <h1 class="w3-jumbo"><b> Products</b></h1>
+        
+        <hr style="width:450px;border:5px solid rgb(10, 10, 10)" class="w3-round">
+      </div>
+      
+      
+      <div class="w3-container" id="designers" style="margin-top:75px">
+        <h1 class="w3-xxxlarge " style="color: rgb(247, 9, 9);"><b>Ruby</b></h1>
+        
+        <p>The best Ruby in the world.</p>
+        <p>Natural rubies often fluoresce under UV light, emitting a red, orange, or sometimes purple glow. This reaction is due to
+             the presence of chromium in the ruby, which causes it to absorb UV light and then re-emit it at a visible wavelength. </p>
+        <p><b> Ruby is thought to be protective of home, possessions and family</b>:</p>
+      </div>
+    
+      
+      <!-- The Cards -->
+      <div class="container text-center">
+      <div class="card" style="width: 18rem;" >
+        <img src="https://i.pinimg.com/564x/4d/8c/6a/4d8c6a4fb1e0dbdd3fc6dd97981ac782.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Necklace set</h5>
+          <p class="card-text">Crystalline substances can be described by the types of particles in them and the types of chemical bonding that take place between the particles. </p>
+          <h5>2,300 pkr</h5>
+          <a href="#" class="btn btn-danger">View More</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.pinimg.com/564x/7d/ff/41/7dff41fd661e3e36d532edbe288ef4c1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pendent</h5>
+          <p class="card-text"> Crystal glass is a transparent material made with the same ingredients as glass, but with added lead-oxide or metal-oxide.</p>
+          <h5>2,100 pkr</h5>
+          <a href="1 RUBY.docx" class="btn btn-danger">View More</a>
+        </div>
+      </div>
+<br><br>
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.pinimg.com/564x/6b/21/bd/6b21bd6ea0a3415e5d3aad43a5bfeff8.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Earrings</h5>
+          <p class="card-text"> Crystal glass is a transparent material made with the same ingredients as glass, but with added lead-oxide or metal-oxide.</p>
+          <h5>6,300 pkr</h5>
+          <a href="1 RUBY.docx" class="btn btn-danger">View More</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.pinimg.com/564x/2f/3b/99/2f3b994b6e91bcbb657cb72c6743cdd5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Crystal Earrings</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5>1,000 pkr</h5>
+          <a href="1 RUBY.docx" class="btn btn-danger">View More</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.pinimg.com/564x/f5/26/f3/f526f3041cb28d321470ae191be71362.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rings</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5>2,100 pkr</h5>
+          <a href="1 RUBY.docx" class="btn btn-danger">View More</a>
+        </div>
+      </div>
+ <br><br>
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.pinimg.com/564x/67/87/40/67874094feb49a4c1c701d03127d2ba5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Crystal ring</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5>4,90 pkr</h5>
+          <a href="1 RUBY.docx" class="btn btn-danger">View More</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.pinimg.com/564x/4f/7c/98/4f7c98563cf1d8765c559541807dff4b.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Earrings</h5>
+          <p class="card-text">Crystal healing is a pseudoscientific alternative-medicine practice that uses semiprecious stones and crystals such as quartz, agate, amethyst or opal.</p>
+          <h5>2,000 pkr</h5>
+          <a href="1 RUBY.docx" class="btn btn-danger">View More</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.pinimg.com/564x/29/66/e5/2966e5597d7793b51d092dd9337fd660.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Red earrings</h5>
+          <p class="card-text">Crystal healing is a pseudoscientific alternative-medicine practice that uses semiprecious stones and crystals such as quartz, agate, amethyst or opal.</p>
+          <h5>4,100 pkr</h5>
+          <a href="1 RUBY.docx" class="btn btn-danger">View More</a>
+        </div>
+      </div>
+    
+    </div>
+    <footer class="mainfooter" role="contentinfo">
+      <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4>Products</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Earrings</a></li>
+                <li><a href="#">Hand Bracelets</a></li>
+                <li><a href="#">Pendent</a></li>
+                <li><a href="#">Necklace set</a></li>
+                <li><a href="#">Crowns</a></li>
+                <li><a href="#">Hair Clips</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+           
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h4>Categrioes</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Ruby</a></li>
+                <li><a href="#">Cubic</a></li>
+                <li><a href="#">Emarld</a></li>
+                <li><a href="#">Triclinic</a></li>
+                <li><a href="#">Monoclinic</a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+       
+    </div>
+        </div>
+      <div class="row">
+        <div class="col-md-12 copy">
+          <p class="text-center">&copy; Copyright 2018 - Crystal Products.  All rights reserved.</p>
+        </div>
+      </div>
+    
+    
+      </div>
+      </div>
+    </footer>
+        
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+    
+</body>
+</html>

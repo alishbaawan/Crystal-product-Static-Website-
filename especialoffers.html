@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Crystal products</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+    <style>
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  div.offers-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+ 
+  
+  
+  a:hover {
+  box-shadow: 0px 0px 0px 3px #850303 inset, 0px 0px 0px 5px white inset; 
+  }
+  
+  div.bottom {
+    width: inherit;
+    height: 50%;
+    background-color: #aec6cf;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div.bottom h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  div.bottom p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: top 100px;   
+   }
+   .card{
+    transform: translateY(-5px);
+    overflow: hidden; 
+     margin: 20px;
+     border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 200ms ease-in-out;
+   }
+   .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+/*FOOTER*/
+
+footer {
+  background-color: #1a1919;
+  color: white;
+
+  margin-top:100px;
+ 
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.8s;
+}
+
+footer a:hover {
+  color: #f70e0e;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+</style>
+</head>
+<body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><img src="https://www.freepnglogos.com/uploads/diamond-png/diamond-gemstone-black-icon-transparent-png-svg-vector-37.png"height="100px"width="100px" alt=""><b>Crystal<br>Products</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="ehome.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+      <a href="p7.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Products</a> 
+      <a href="especialoffers.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Special offers</a> 
+      <a href="enewarrivals.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">New Arrivals</a> 
+      <a href="eaboutus.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a> 
+      <a href="c9.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
+      <a href="compareproducts.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Compare</a>  </div>
+      </div>
+  </nav>
+  
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Crystal products</span>
+  </header>
+  
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+  
+    <!-- Header -->
+    <!-- <div class="w3-container" style="margin-top:80px" id="showcase">
+      
+      
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+    </div> -->
+    <h1 style="font-size: 85px;padding: 56; color: #850303; text-align: center;">Special offers</h1>
+<img src="https://www.pngall.com/wp-content/uploads/2016/04/50-off-PNG-HD.png"
+width="500px" height="300px" alt="">
+<div class="container">
+    <div class="card" style="width: 18rem;">
+    <img src="https://i.pinimg.com/564x/dc/b3/2a/dcb32a346908a681a7f637fa259d786d.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Crown set</h5>
+      <p class="card-text">Chrysal is a leading company in the flower industry, offering solutions to keep cut flowers and potted plants fresh longer. </p>
+      <a href="#" class="btn btn-danger text-center">order</a>
+    </div>
+  </div>
+ <!-- thecards -->
+  <div class="card" style="width: 18rem;">
+    <img src="https://i.pinimg.com/564x/93/c0/a8/93c0a83e9a12c68fe63e275e7392dd2a.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Crystal set</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-danger text-center">order</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://i.pinimg.com/564x/ac/7e/31/ac7e314cc34fa02b21fe70d8c64f5591.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Necklace set</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-danger text-center">order</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://i.pinimg.com/564x/44/7a/58/447a58af57152ab3d5e40fe4eaa249b3.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">White crown set</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-danger text-center">order</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://i.pinimg.com/564x/27/b3/ad/27b3ad1d84e8fee51825596f156d300e.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Earrings set</h5>
+      <p class="card-text"> Chrysal has different products which enhance colours, reduce evaporation and improve the opening of buds.</p>
+      <a href="#" class="btn btn-danger text-center">order</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://i.pinimg.com/564x/ae/ce/f9/aecef9e77ff50439c18cb71be03fe5d2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Necklace set</h5>
+      <p class="card-text">Chrysal is a leading company in the flower industry, offering solutions to keep cut flowers and potted plants fresh longer. </p>
+      <a href="#" class="btn btn-danger text-center">order</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://i.pinimg.com/564x/45/58/a8/4558a8d1b8e711f875b919b38db56c9f.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Jwellery set</h5>
+      <p class="card-text"> Chrysal has different products which enhance colours, reduce evaporation and improve the opening of buds.</p>
+      <a href="#" class="btn btn-danger text-center">order</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://i.pinimg.com/564x/cf/17/fa/cf17fa54d548d976e2348da3e6a40e22.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">crytsal set</h5>
+      <p class="card-text">Chrysal is a leading company in the flower industry, offering solutions to keep cut flowers and potted plants fresh longer. </p>
+      <a href="#" class="btn btn-danger text-center">order</a>
+    </div>
+  </div>
+</div>
+
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Products</h4>
+          <ul class="list-unstyled">
+            <li><a href="p7.html">Earrings</a></li>
+            <li><a href="p7.html">Hand Bracelets</a></li>
+            <li><a href="p7.html">Pendent</a></li>
+            <li><a href="p7.html">Necklace set</a></li>
+            <li><a href="especialoffers.html">Crowns</a></li>
+            <li><a href="especialoffers.html">Hair Clips</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+       
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Categrioes</h4>
+          <ul class="list-unstyled">
+            <li><a href="ruby.html">Ruby</a></li>
+            <li><a href="cubic (1) (1).html">Cubic</a></li>
+            <li><a href="emarld.html">Emarld</a></li>
+            <li><a href="triclinic.html">Triclinic</a></li>
+            <li><a href="Monoclinic.html">Monoclinic</a></li>
+          </ul>
+        </div>
+      </div>
+     
+    </div>
+   
+</div>
+    </div>
+	<div class="row">
+		<div class="col-md-12 copy">
+			<p class="text-center">&copy; Copyright 2018 - Crystal Products.  All rights reserved.</p>
+		</div>
+	</div>
+
+
+  </div>
+  </div>
+</footer>
+
+
+  <!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+  <script>
+  $(document).ready(function() {
+    $('a').hover(function(e) {
+      e.preventDefault();
+      $(this).prev().toggleClass('animate');
+    });
+  });
+</script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
